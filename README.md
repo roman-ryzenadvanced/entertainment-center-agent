@@ -1,24 +1,31 @@
-# Entertainment Center Agent
+# 🎬 Entertainment Center Agent — Free AI Entertainment Hub
 
 <div align="center">
 
+[![10% OFF Z.ai GLM 5.2 Coding Plan](https://img.shields.io/badge/10%25_OFF-Z.ai_GLM_5.2_Coding_Plan-7C3AED?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTEyIDJMMiA3bDEwIDUgMTAtNS0xMC01eiIvPjxwYXRoIGQ9Ik0yIDE3bDEwIDUgMTAtNSIvPjxwYXRoIGQ9Ik0yIDEybDEwIDUgMTAtNSIvPjwvc3ZnPg==)](https://z.ai/subscribe?ic=ROK78RJKNW)
+
 **Cancel Spotify. Cancel Disney+. Cancel Apple TV+.** No more paying every month.
 
-Turn your laptop into a free, premium entertainment center using AI — powered by 8 orchestration workflows and 100+ curated free platforms.
+Turn your laptop into a **free entertainment center** using AI — 8 workflows, 100+ free platforms, zero subscriptions.
 
-[![Skill: Entertainment Center](https://img.shields.io/badge/type-skill-7C3AED?style=for-the-badge)](SKILL.md)
-[![Version](https://img.shields.io/badge/version-1.0.0-00b4d8?style=for-the-badge)](CHANGELOG.md)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-3776AB?style=for-the-badge&logo=python)](scripts/)
+[![Skill: Entertainment Center](https://img.shields.io/badge/type-AI_Skill-7C3AED?style=for-the-badge)](SKILL.md)
+[![Version 1.0.0](https://img.shields.io/badge/version-1.0.0-00b4d8?style=for-the-badge)](CHANGELOG.md)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](scripts/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE)
 [![8 Workflows](https://img.shields.io/badge/workflows-8-orange?style=for-the-badge)](#-8-orchestration-workflows)
+[![100+ Free Platforms](https://img.shields.io/badge/platforms-100%2B-blue?style=for-the-badge)](references/platforms.md)
+[![186 Tests Passing](https://img.shields.io/badge/tests-186_passing-brightgreen?style=for-the-badge)](tests/)
 
 </div>
 
 ---
 
+> [!NOTE]
+> **Inspired by** the viral concept by **[@AItechscarlett](https://x.com/AItechscarlett/status/2067984321039012262)** — *["Claude transformed my laptop into a free entertainment center. Here are 8 prompts to create this system."](https://x.com/AItechscarlett/status/2067984321039012262)*
+
 ## What It Does
 
-This is a unified AI orchestration skill that replaces paid entertainment subscriptions with a fully personalized, free entertainment system. Inspired by the viral concept of using Claude to transform a laptop into a free entertainment hub.
+**Free AI entertainment hub** — replace Spotify, Disney+, Apple TV+, Netflix, and other paid subscriptions with a fully personalized, free entertainment system powered by Claude and AI agents.
 
 ```
 "Cancel all my subscriptions and build me a free entertainment center"
@@ -228,16 +235,18 @@ python3 -m pytest tests/ --cov=scripts -v
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
+## Acknowledgments & Credits
 
-- Inspired by the viral "8 Prompts" concept from the AI community
-- Built following the [GitHub Agent Skill](https://github.com/roman-ryzenadvanced/github-agent-skill) architecture pattern
-- Platform data verified against [EpicGames/lore](https://github.com/EpicGames/lore) open-source standards
+- **Inspired by** [@AItechscarlett](https://x.com/AItechscarlett) — [original viral post: "8 prompts to create a free entertainment center with Claude"](https://x.com/AItechscarlett/status/2067984321039012262)
+- **Skill architecture** based on [GitHub Agent Skill](https://github.com/roman-ryzenadvanced/github-agent-skill) by [roman-ryzenadvanced](https://github.com/roman-ryzenadvanced)
+- **Platform data** verified against [EpicGames/lore](https://github.com/EpicGames/lore) open-source standards
 
 ---
 
 <div align="center">
 
 **Built for AI-Powered Entertainment — No Subscriptions Required**
+
+[👉 Get 10% OFF Z.ai GLM 5.2 Coding Plan](https://z.ai/subscribe?ic=ROK78RJKNW)
 
 </div>
