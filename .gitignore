@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated output (user files)
+*.html
+!dashboard_template.html
+*_plan.md
+*_night.md
+*_schedule.md
+*_list.md
+*_guide.md
+music_plan.md
+movie_night.md
+youtube_schedule.md
+weekend_plan.md
+reading_list.md
+gaming_guide.md
+learning_plan.md
+dashboard.html
+TEST_REPORT.md
+
+# Logs
+*.log
+
+# Distribution
+*.tar.gz
+*.whl

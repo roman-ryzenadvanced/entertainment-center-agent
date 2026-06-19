@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: pip install pytest --quiet
+
+      - name: Run lint checks
+        run: python3 -m py_compile scripts/*.py
+
+      - name: Run tests
+        run: python3 -m pytest tests/ -v --tb=short
+
+      - name: Verify all scripts have CLI help
+        run: |
+          for script in scripts/*.py; do
+            echo "Testing $script --help"
+            python3 "$script" --help > /dev/null
+          done
+
+  validate-references:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate platform database
+        run: python3 -m pytest tests/test_platforms_db.py -v
+
+      - name: Check SKILL.md exists and is valid
+        run: |
+          test -f SKILL.md && echo "SKILL.md exists"
+          grep -q "name:" SKILL.md && echo "SKILL.md has frontmatter"
+
+      - name: Check all reference files exist
+        run: |
+          test -f references/prompts.md && echo "prompts.md exists"
+          test -f references/platforms.md && echo "platforms.md exists"
+          test -f references/conventions.md && echo "conventions.md exists"
